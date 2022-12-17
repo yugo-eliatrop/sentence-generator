@@ -1,0 +1,74 @@
+[
+  {
+    "nouns": ["Yugo", "sister", "brother"],
+    "verbs": [
+      {
+        "v": "say",
+        "vs": "says",
+        "ved": "said"
+      },
+      {
+        "v": "hear",
+        "vs": "hears",
+        "ved": "heard"
+      },
+      {
+        "v": "love",
+        "vs": "loves",
+        "ved": "loved"
+      },
+      {
+        "v": "laugh",
+        "vs": "laughs",
+        "ved": "laughed"
+      },
+      {
+        "v": "live",
+        "vs": "lives",
+        "ved": "lived"
+      },
+      {
+        "v": "say",
+        "vs": "says",
+        "ved": "said"
+      },
+      {
+        "v": "do",
+        "vs": "does",
+        "ved": "did"
+      },
+      {
+        "v": "ask",
+        "vs": "asks",
+        "ved": "asked"
+      },
+      {
+        "v": "sing",
+        "vs": "sings",
+        "ved": "sang"
+      },
+      {
+        "v": "dance",
+        "vs": "dances",
+        "ved": "danced"
+      },
+      {
+        "v": "play",
+        "vs": "plays",
+        "ved": "played"
+      },
+      {
+        "v": "work",
+        "vs": "works",
+        "ved": "worked"
+      },
+      {
+        "v": "answer",
+        "vs": "answers",
+        "ved": "answered"
+      }
+    ],
+    "additions": [""],
+    "suitableTemplates": ["1", "2", "3", "4", "5", "6", "7", "8"]
+  }
+]
