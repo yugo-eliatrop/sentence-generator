@@ -1,13 +1,13 @@
 {
-  "1": "he|she|it|{N} {Vs} {ad}",
-  "2": "he|she|it|{N} doesn't {V} {ad}",
-  "3": "does he|she|it|{N} {V} {ad} ?",
-  "4": "I|you|we|they|{N} {V} {ad}",
-  "5": "I|you|we|they|{N} don't {V} {ad}",
-  "6": "do I|you|we|they|{N} {V} {ad} ?",
-  "7": "I|you|he|she|it|we|they|{N} will|wont {V} {ad}",
-  "8": "will I|you|he|she|it|we|they|{N} {V} {ad} ?",
-  "9": "I|you|he|she|it|we|they|{N} {Ved} {ad}",
-  "10": "I|you|he|she|it|we|they|{N} |didn't {V} {ad}",
-  "11": "did|didn't I|you|he|she|it|we|they|{N} {V} {ad} ?"
+  "presSimpPosit1": "he|she|it|{N} {Vs} {ad}",
+  "presSimpNegat1": "he|she|it|{N} doesn't {V} {ad}",
+  "presSimpQuest1": "does he|she|it|{N} {V} {ad} ?",
+  "presSimpPosit2": "I|you|we|they {V} {ad}",
+  "presSimpNegat2": "I|you|we|they don't {V} {ad}",
+  "presSimpQuest2": "do I|you|we|they {V} {ad} ?",
+  "futurSimpPositNegat": "I|you|he|she|it|we|they|{N} will|wont {V} {ad}",
+  "futurSimpQuest": "will I|you|he|she|it|we|they|{N} {V} {ad} ?",
+  "pastSimpPosit": "I|you|he|she|it|we|they|{N} {Ved} {ad}",
+  "pastSimpNegat": "I|you|he|she|it|we|they|{N} |didn't {V} {ad}",
+  "pastSimpQuest": "did|didn't I|you|he|she|it|we|they|{N} {V} {ad} ?"
 }
