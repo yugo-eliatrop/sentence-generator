@@ -1,6 +1,6 @@
 export type Templates = Record<string, string>;
 
-export type TemplateSymbol = '{V}' | '{Vs}' | '{Ved}' | '{N}' | '{ad}';
+export type TemplateSymbol = '{V}' | '{Vs}' | '{Ved}' | '{N}' | '{ad}' | '{Q}';
 
 export type Verb = {
   v: string;
@@ -9,6 +9,7 @@ export type Verb = {
 };
 
 export type Group = {
+  questions: string[];
   nouns: string[];
   verbs: Verb[];
   additions: string[];

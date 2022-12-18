@@ -52,6 +52,8 @@ export class SentenceGeneratorService {
           return randomElem(group.nouns);
         case '{ad}':
           return randomElem(group.additions);
+        case '{Q}':
+          return randomElem(group.questions);
         default:
           return textSymbol;
       }

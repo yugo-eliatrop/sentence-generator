@@ -3,34 +3,9 @@
     "nouns": ["Yugo", "sister", "brother"],
     "verbs": [
       {
-        "v": "say",
-        "vs": "says",
-        "ved": "said"
-      },
-      {
-        "v": "hear",
-        "vs": "hears",
-        "ved": "heard"
-      },
-      {
-        "v": "love",
-        "vs": "loves",
-        "ved": "loved"
-      },
-      {
         "v": "laugh",
         "vs": "laughs",
         "ved": "laughed"
-      },
-      {
-        "v": "live",
-        "vs": "lives",
-        "ved": "lived"
-      },
-      {
-        "v": "say",
-        "vs": "says",
-        "ved": "said"
       },
       {
         "v": "do",
@@ -38,14 +13,45 @@
         "ved": "did"
       },
       {
-        "v": "ask",
-        "vs": "asks",
-        "ved": "asked"
-      },
-      {
         "v": "sing",
         "vs": "sings",
         "ved": "sang"
+      }
+    ],
+    "additions": [""],
+    "suitableTemplates": "all",
+    "questions": ["", "why", "where", "when", "how"]
+  },
+  {
+    "nouns": ["Yugo", "sister", "brother"],
+    "verbs": [
+      {
+        "v": "say",
+        "vs": "says",
+        "ved": "said"
+      },
+      {
+        "v": "listen",
+        "vs": "listens",
+        "ved": "listened"
+      },
+      {
+        "v": "answer",
+        "vs": "answers",
+        "ved": "answered"
+      }
+    ],
+    "additions": ["", "to him", "to her", "to them", "to you", "to me", "to this", "to us"],
+    "suitableTemplates": "all",
+    "questions": ["", "why", "where", "when", "how", "what"]
+  },
+  {
+    "nouns": ["Yugo", "sister", "brother"],
+    "verbs": [
+      {
+        "v": "live",
+        "vs": "lives",
+        "ved": "lived"
       },
       {
         "v": "dance",
@@ -61,14 +67,28 @@
         "v": "work",
         "vs": "works",
         "ved": "worked"
-      },
-      {
-        "v": "answer",
-        "vs": "answers",
-        "ved": "answered"
       }
     ],
-    "additions": [""],
-    "suitableTemplates": "all"
+    "additions": ["", "with him", "with her", "with them", "with you", "with me", "with this", "with us"],
+    "suitableTemplates": "all",
+    "questions": ["", "why", "where", "how"]
+  },
+  {
+    "nouns": ["Yugo", "sister", "brother"],
+    "verbs": [
+      {
+        "v": "ask",
+        "vs": "asks",
+        "ved": "asked"
+      },
+      {
+        "v": "love",
+        "vs": "loves",
+        "ved": "loved"
+      }
+    ],
+    "additions": ["", "him", "her", "them", "you", "me", "this", "us"],
+    "suitableTemplates": "all",
+    "questions": ["", "why", "where", "when"]
   }
 ]

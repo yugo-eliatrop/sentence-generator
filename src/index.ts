@@ -22,9 +22,9 @@ const main = async () => {
   } while (!(await keypress()).exitPressed);
   const secondsLeft = (new Date().getTime() - startTime) / 1000;
   process.stdout.write(
-    `\nFinished. It took you ${round(secondsLeft)} seconds in total, ${round(
-      secondsLeft / sentencesCount
-    )} seconds per sentence\n`
+    `\nFinished. There were ${sentencesCount} sentences generated\nIt took you ${round(
+      secondsLeft
+    )} seconds in total, ${round(secondsLeft / sentencesCount)} seconds per sentence\n`
   );
   process.exit(0);
 };
