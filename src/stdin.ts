@@ -3,7 +3,7 @@ export const keypress = async (): Promise<{ exitPressed: boolean }> => {
   return new Promise(resolve =>
     process.stdin.once('data', data => {
       const byteArray = [...data];
-      if (byteArray.length > 0 && byteArray[0] === 3) {
+      if (byteArray[0] === 3) {
         resolve({ exitPressed: true });
       }
       process.stdin.setRawMode(false);

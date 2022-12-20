@@ -24,9 +24,8 @@ const main = async () => {
   process.stdout.write(
     `\nFinished. There were ${sentencesCount} sentences generated\nIt took you ${round(
       secondsLeft
-    )} seconds in total, ${round(secondsLeft / sentencesCount)} seconds per sentence\n`
+    )} seconds to translate this in total or ${round(secondsLeft / sentencesCount)} seconds per sentence\n\n`
   );
-  process.exit(0);
 };
 
-main();
+main().then(() => process.exit(0));
