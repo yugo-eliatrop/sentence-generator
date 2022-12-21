@@ -6,8 +6,12 @@ import { keypress } from './stdin';
 
 const round = (num: number) => Math.round(num * 10) / 10;
 
-const main = async () => {
-  await app.prepareData('./data/templates.json', './data/groups.json');
+const main = async (): Promise<number> => {
+  const initializationError = await app.prepareData('./data/templates.json', './data/groups.json');
+  if (O.isSome(initializationError)) {
+    process.stdout.write(`Initialization error% ${initializationError.value.message}`);
+    return 1;
+  }
   const startTime = new Date().getTime();
   let sentencesCount = 0;
   do {
@@ -26,6 +30,7 @@ const main = async () => {
       secondsLeft
     )} seconds to translate this in total or ${round(secondsLeft / sentencesCount)} seconds per sentence\n\n`
   );
+  return 0;
 };
 
-main().then(() => process.exit(0));
+main().then(process.exit);

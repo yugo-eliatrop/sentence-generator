@@ -1,5 +1,7 @@
 import * as t from 'io-ts';
 
+import { nonEmptyArray } from './non-empty-array.type';
+
 const TemplatesCodec = t.record(t.string, t.string);
 
 export type Templates = t.TypeOf<typeof TemplatesCodec>;
@@ -24,7 +26,7 @@ const GroupCodec = t.type({
   suitableTemplates: t.union([t.literal('all'), t.array(t.string)]),
 });
 
-const GroupsCodec = t.array(GroupCodec);
+const GroupsCodec = nonEmptyArray(GroupCodec);
 
 export type Group = t.TypeOf<typeof GroupCodec>;
 
