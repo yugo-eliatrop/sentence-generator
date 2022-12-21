@@ -1,3 +1,4 @@
+import * as E from 'fp-ts/lib/Either';
 import * as O from 'fp-ts/lib/Option';
 
 import { IDataReader } from './interfaces';
@@ -10,10 +11,12 @@ export class ApplicationService {
   ) {}
 
   public async prepareData(templatesPath: string, wordGroupsPath: string) {
-    const templates = await this.dataReader.readTemplates(templatesPath);
-    const groups = await this.dataReader.readWordGroups(wordGroupsPath);
-    this.sentenceGeneratorService.templates = O.fromNullable(templates);
-    this.sentenceGeneratorService.groups = O.fromNullable(groups);
+    const templates = await this.dataReader.readTemplates(templatesPath)();
+    const groups = await this.dataReader.readWordGroups(wordGroupsPath)();
+    this.sentenceGeneratorService.templates = O.fromEither(templates);
+    this.sentenceGeneratorService.groups = O.fromEither(groups);
+    if (E.isLeft(groups)) console.log(groups.left);
+    if (E.isLeft(templates)) console.log(templates.left);
   }
 
   public genNextSentence() {
